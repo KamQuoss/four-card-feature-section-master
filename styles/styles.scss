@@ -1,0 +1,88 @@
+// VARIABLES
+// -- Colors
+// ---- Primary
+
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// ---- Neutral
+
+$very-dark-blue: #4c4e61;
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: #fff;
+
+// -- Typography
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+$font-size: 0.938rem;
+$font-weight-light: 200;
+$font-weight-medium: 400;
+$font-weight-semibold: 600;
+
+// --sizes
+$border-radius: 6px;
+
+body{
+    margin: 0;
+    background: $very-light-gray;
+    color: $very-dark-blue;
+    font-family: 'Poppins', sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight-medium;
+}
+h1 {
+font-size: 1.6rem;
+text-align: center;
+}
+h2{
+    font-size: 1.6rem;
+    font-weight: $font-weight-light;
+text-align: center;
+
+}
+article{
+    text-align: center;
+    color: $grayish-blue;
+}
+h3+p{
+    margin-top: 0.3rem;
+}
+
+.card-container {
+    .card{
+        background: $white;
+        border-radius: $border-radius;      
+        box-shadow: 0px 10px 30px -6px rgba(76, 78, 97, 0.3); 
+        padding: 1.6rem;
+        margin: 1.6rem; 
+        width: 17rem;
+        &--cyan{
+            border-top: 4px solid $cyan;
+        }
+        &--red{
+            border-top: 4px solid $red;
+        }
+        &--orange{
+            border-top: 4px solid $orange;
+        }
+        &--blue{
+            border-top: 4px solid $blue;
+        }
+        h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        p{
+            color: $grayish-blue;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
