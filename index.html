@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Four card feature section</title>
 
   <link rel="stylesheet" href="/styles/styles.css">
 </head>
+
 <body>
-  
-  <div class="container">
-    <h1><span class="text-weight-light">Reliable, efficient delivery</span><br>
-    Powered by Technology</h1>
-    <article>
-      Our Artificial Intelligence powered tools use millions of project data points
-      to ensure that your project is successful
-    </article>
-    <div class="card-container">
+
+  <div class="wrapper">
+    <header class="header">
+      <h1><span class="text-weight-light">Reliable, efficient delivery</span><br>
+        Powered by Technology</h1>
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful
+      </p>
+    </header>
+    <main class="card-container">
       <div class="card card--cyan">
         <h3 class="cart-title">Supervisor</h3>
         <p class="card-content">Monitors activity to identify project roadblocks</p>
@@ -30,25 +35,26 @@
         <p class="card-content">Scans our talent network to create the optimal team for your project</p>
         <div class="card-image"><img src="/images/icon-team-builder.svg" alt="home website icon"></div>
       </div>
-      <div class="card card--orange">
-        <h3 class="cart-title">Karma</h3>
-        <p class="card-content">Regularly evaluates our talent to ensure quality</p>
-        <div class="card-image"><img src="/images/icon-karma.svg" alt="lightbulb icon"></div>
-      </div>
       <div class="card card--blue">
         <h3 class="cart-title">Calculator</h3>
         <p class="card-content">Uses data from past projects to provide better delivery estimates</p>
         <div class="card-image"><img src="/images/icon-calculator.svg" alt="monitor icon"></div>
       </div>
-    </div>
+      <div class="card card--orange">
+        <h3 class="cart-title">Karma</h3>
+        <p class="card-content">Regularly evaluates our talent to ensure quality</p>
+        <div class="card-image"><img src="/images/icon-karma.svg" alt="lightbulb icon"></div>
+      </div>
+    </main>
   </div>
 
-  
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
 </body>
+
 </html>

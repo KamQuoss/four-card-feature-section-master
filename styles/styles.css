@@ -27,19 +27,53 @@ h3 + p {
   margin-top: 0.3rem;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  max-width: 1100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
 .card-container .card {
   background: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 10px 30px -6px rgba(76, 78, 97, 0.3);
           box-shadow: 0px 10px 30px -6px rgba(76, 78, 97, 0.3);
   padding: 30px;
-  margin: 25px;
-  width: 312px;
-  height: 222px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 350px;
+  min-height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-container .card--cyan {
   border-top: 4px solid #45d3d3;
+  grid-row: span 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card-container .card--red {
@@ -48,10 +82,16 @@ h3 + p {
 
 .card-container .card--orange {
   border-top: 4px solid #fcaf4a;
+  -ms-grid-column: 2;
+  grid-column: 2;
 }
 
 .card-container .card--blue {
   border-top: 4px solid #549ef2;
+  grid-row: span 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card-container .card h3 {
@@ -66,12 +106,8 @@ h3 + p {
 }
 
 .card-container .card .card-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .attribution {
